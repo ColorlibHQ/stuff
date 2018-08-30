@@ -449,7 +449,7 @@ if (!function_exists('stuff_custom_css')) {
 			';
         }
 
-        $custom_css . '</style>';
+        $custom_css .= '</style>';
         print $custom_css;
     }
     add_action('wp_head', 'stuff_custom_css');

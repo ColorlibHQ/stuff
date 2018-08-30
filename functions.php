@@ -254,6 +254,14 @@ if(!function_exists('stuff_pagination')){
     }
 }
 
+/**
+ * Registers an editor stylesheet for the theme.
+ */
+function stuff_theme_add_editor_styles() {
+	add_editor_style( get_template_directory_uri() . '/css/custom-editor-style.css' );
+}
+add_action( 'admin_init', 'stuff_theme_add_editor_styles' );
+
 /*-----------------------------------------------------
  * 				Comments Function
  *----------------------------------------------------*/
