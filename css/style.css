@@ -101,11 +101,16 @@ h1, h2, h3, h4, h5, h6, figure {
     font-size: 24px;
     margin: 0;
     padding: 0;
-    line-height: 40px;
+    line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
 }
-
+.header_tagline{
+    line-height: 12px;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px; 
+}
 .colorlib-nav #colorlib-logo a {
     position: relative;
     color: #000;
@@ -135,7 +140,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .colorlib-nav ul li a {
     position: relative;
     font-size: 12px;
-    padding: 10px 15px;
+    padding: 18px 15px;
     color: rgba(0, 0, 0, 0.7);
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;

@@ -101,11 +101,22 @@ function save_user_profile_extra( $user_id ) {
 
 
 
+function my_admin_scripts() {
+    wp_enqueue_script('media-upload');
+    wp_enqueue_script('thickbox');
+}
+
+function my_admin_styles() {
+    wp_enqueue_style('thickbox');
+}
+
+add_action('admin_print_scripts', 'my_admin_scripts');
+add_action('admin_print_styles', 'my_admin_styles');
+
+
 //Adding image upload js
 add_action('admin_head','stuff_user_profile_extra_js');
-wp_enqueue_script('media-upload');
-wp_enqueue_script('thickbox');
-wp_enqueue_style('thickbox');
+
 
 function stuff_user_profile_extra_js() { ?>
 
@@ -209,7 +220,7 @@ if ( !class_exists('StuffVisualBiographyEditor') ):
             if ( $hook == 'profile.php' || $hook == 'user-edit.php' ) {
                 wp_enqueue_script(
                     'visual-editor-biography',
-                    get_template_directory_uri() . 'inc/js/visual-editor-biography.js',
+                    get_template_directory_uri() . '/inc/js/visual-editor-biography.js',
                     array('jquery'),
                     false,
                     true

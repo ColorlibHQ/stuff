@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             <div class="instagram-entry"
-                 data-username="<?php echo wp_kses_post(get_theme_mod('stuff_instagram_gallery_user', 'remonfoysal')); ?>"
+                 data-username="<?php echo wp_kses_post(get_theme_mod('stuff_instagram_gallery_user', 'ajanta91')); ?>"
                  data-items="<?php echo '8'; ?>"></div>
         </div>
     </div>

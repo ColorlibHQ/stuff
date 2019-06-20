@@ -43,12 +43,13 @@ class Stuff_Notify_System extends Epsilon_Notify_System {
 				'installed' => Epsilon_Notify_System::check_plugin_is_installed( $slug ),
 				'active'    => Epsilon_Notify_System::check_plugin_is_active( $slug ),
 			);
-
+			
 			if ( empty( $get ) ) {
 				$arr = array_filter( $arr );
 
 				return 2 === count( $arr );
 			}
+			
 		}
 
 		// Translators: %s is the plugin name.

@@ -81,7 +81,7 @@ class Stuff_Dashboard_Setup {
 		}
 
 		if ( empty( $this->notice ) ) {
-			$this->notice .= '<img src="' . esc_url( get_template_directory_uri() ) . '/inc/libraries/epsilon-theme-dashboard/assets/images/macho-themes-logo-black.png" class="epsilon-author-logo" />';
+			$this->notice .= '<img src="' . esc_url( get_template_directory_uri() ) . '/inc/libraries/epsilon-theme-dashboard/assets/images/colorlib-logo-dark.png" class="epsilon-author-logo" />';
 
 
 			/* Translators: Notice Title */

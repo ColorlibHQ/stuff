@@ -34,7 +34,7 @@ class stuff_instagram_feed extends WP_Widget
     public function form($instance){
         $data = array(
             'title' => isset($instance['title'])?$instance['title']:esc_html('Instagram', 'stuff'),
-            'insta_user' => isset($instance['insta_user'])?$instance['insta_user']:'remonfoysal',
+            'insta_user' => isset($instance['insta_user'])?$instance['insta_user']:'ajanta91',
             'insta_items' => isset($instance['insta_items'])?$instance['insta_items']:'8',
         );
 

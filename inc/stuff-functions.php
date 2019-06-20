@@ -8,16 +8,16 @@
 if (!function_exists('stuff_header')) {
     function stuff_header()
     {
-        $affix_attr = (get_theme_mod('stuff_fix_nav', false) == true ? 'data-spy="affix" data-offset-top="90"' : '');
+        $affix_attr = ( get_theme_mod('stuff_fix_nav', true ) == false ? '' : 'data-spy="affix" data-offset-top="90"' );
         ?>
         <nav class="colorlib-nav" role="navigation" <?php print $affix_attr; ?>>
             <div class="top-menu">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-2">
+                        <div class="col-xs-3">
                             <?php stuff_logo(); ?>
                         </div>
-                        <div class="col-xs-10 text-right menu-1">
+                        <div class="col-xs-9 text-right menu-1">
                             <?php
                             wp_nav_menu(array(
                                 'theme_location'=> 'primary',

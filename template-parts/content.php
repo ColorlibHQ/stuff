@@ -46,7 +46,8 @@ if (is_single()) { ?>
     </div>
     <?php
 } else {
-    if (is_archive() || is_search()) {
+    $stuff_layout = Stuff_Helper::get_layout();
+    if (is_archive() || is_search() || 'right-sidebar' === $stuff_layout['type'] ) {
         echo '<div class="col-md-6">';
     } else {
         echo '<div class="col-md-4">';
